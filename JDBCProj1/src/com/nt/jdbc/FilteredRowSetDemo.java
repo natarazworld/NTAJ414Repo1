@@ -48,7 +48,7 @@ public class FilteredRowSetDemo {
 		
 		try(OracleFilteredRowSet frs=new OracleFilteredRowSet()){
 			  //set properties
-			  frs.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+			  frs.setUrl("jdbc:oracle:thin:@localhost:1521:xe ");
 			  frs.setUsername("system");
 			  frs.setPassword("manager");
 			  frs.setCommand("SELECT EMPNO,ENAME,JOB,SAL,DEPTNO FROM EMP ");
